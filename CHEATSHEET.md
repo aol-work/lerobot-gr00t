@@ -1,5 +1,7 @@
 # Cheat sheet for our config
 
+Documentation: <https://huggingface.co/docs/lerobot/so101>
+
 ## Calibrate follower
 
 ```bash
