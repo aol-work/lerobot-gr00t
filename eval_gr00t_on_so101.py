@@ -105,7 +105,7 @@ def move_to_initial_pose(f: SO101Follower):
 
 
 config = SO101FollowerConfig(
-    port="/dev/ttyACM0",
+    port="/dev/motor-bus-follower",
     id="follower12vblack",
     cameras={
         "webcam": OpenCVCameraConfig(
@@ -139,7 +139,7 @@ try:
                 axis=0,
             )
             assert concat_action.shape == (6,), concat_action.shape
-            # follower.send_action(numpy_to_dict(concat_action))
+            follower.send_action(numpy_to_dict(concat_action))
             time.sleep(0.02)
 
             # 0.05*16 = 0.8 seconds
