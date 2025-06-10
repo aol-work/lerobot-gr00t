@@ -1,3 +1,7 @@
+"""
+This script is an example to run the Gr00t robot on the SO101 follower.
+"""
+
 import time
 
 import numpy as np
