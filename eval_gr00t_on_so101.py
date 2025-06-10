@@ -125,8 +125,11 @@ def main():
 
     client = Gr00tRobotInferenceClient()
     follower = SO101Follower(config)
+    # TODO(aoldemeier): Add optional calibration
     follower.connect(calibrate=False)
+    # TODO(aoldemeier): Load custom preset from original example
 
+    # TODO(aoldemeier): Move to initial position instead
     go_home(follower)
 
     try:
